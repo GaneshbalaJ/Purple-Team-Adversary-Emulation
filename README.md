@@ -1,4 +1,4 @@
-# Purple Team Adversary Emulation: T1105, T1204 & T1071
+# Purple Team Adversary Emulation
 
 ## 🛡️ Project Overview
 This project demonstrates the full attack lifecycle of a reverse shell intrusion and its detection. I built an isolated lab environment, executed a malicious payload using Kali Linux and Metasploit, and acted as a SOC Analyst to hunt down the indicators of compromise (IoCs) using Windows Sysmon telemetry.
