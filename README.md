@@ -32,3 +32,16 @@ Using Sysmon logs, I successfully reconstructed the exact timeline of the attack
 
 ## 🛡️ Custom Detections
 *   Created a custom Sigma rule to detect the specific outbound C2 network pattern (Event ID 3) associated with this malware execution.
+## 📸 Forensic Evidence (Screenshots)
+
+### 1. Attacker View (Meterpreter C2 Session)
+![Attacker View](screenshots/Attacker-view.jpg)
+
+### 2. File Creation (Event ID 11)
+![Event ID 11](screenshots/Event-11.png)
+
+### 3. User Execution (Event ID 1)
+![Event ID 1](screenshots/Event-13.png)
+
+### 4. Network Connection (Event ID 3)
+![Event ID 3](screenshots/Event-3.jpg)
