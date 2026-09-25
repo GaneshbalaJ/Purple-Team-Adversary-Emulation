@@ -1,0 +1,18 @@
+title: Suspicious Outbound C2 Connection from update_check.exe
+id: 12345678-1234-1234-1234-123456789012
+status: experimental
+description: Detects an outbound network connection over port 4444 from the downloaded update_check.exe payload, indicating a potential Meterpreter reverse shell.
+author: Ganeshbala
+date: 2026-09-25
+logsource:
+    product: windows
+    service: sysmon
+detection:
+    selection:
+        EventID: 3
+        Image|endswith: '\update_check.exe'
+        DestinationPort: 4444
+    condition: selection
+falsepositives:
+    - Legitimate internal tools named update_check.exe (highly unlikely to communicate over port 4444)
+level: high
